@@ -15,31 +15,49 @@
 	<h1>Compound Interest Calculator</h1>
 
 	<form>
-		<ul>
-			<li>
-				<label for="amount">Starting Amount($)*:</label>
+		<ul> 
+            <i class="input-list">
+			<li> <class: "input-group"></class:>
+				<label class="input-label" for="amount">Initial Deposit($)*:</label>
+                <small> class="input-subtext" How much money are you starting with?</small>
 				<input type="number" name="amount" value="1000">
 			</li>
 			<li>
-				<label for="interest">Interest Rate(%)*:</label>
+				<label class="input-label" for="interest">Interest Rate(%)*:</label>
+                <small> Yearly rate?</small>
 				<input type="number" name="interest" value="2">
 			</li>
 			<li>
-				<label for="contribution">Annual Contribution($):</label>
+				<label class="input-label" for="contribution">Contributions($):</label>
 				<input type="number" name="contribution" value="0">
 			</li>
 			<li>
-				<label for="duration">Duration(Years)*:</label>
+				<label class="input-label" for="duration">Investment Time Span (Years)*:</label>
 				<input type="number" name="duration" value="10">
 			</li>
 		</ul>
 		<button type="button" onclick="calculate()">Submit</button>
 	</form>
 	<section>
-		<h2>Results</h2>
-		<p>Starting amount: <strong class="starting-val">$1000</strong></p>
-		<p>Contribution total: <strong class="contribution-val">$0.00</strong></p>
-		<p>Final Amount in <strong class="duration-val">10</strong> years: <strong class="final-val">$1218.99</strong></p>
+        <div class="result-total">
+        </div>
+		<h2>Future Balance</h2>
+		<p>
+			Starting amount: <strong class="starting-val">$1000</strong>
+			<div class="starting-bar"></div>
+		</p>
+		<p>
+			Contribution total: <strong class="contribution-val">$0.00</strong>
+			<div class="contribution-bar"></div>
+		</p>
+		<p>
+			Return total: <strong class="return-val">$0.00</strong>
+			<div class="return-bar"></div>
+		</p>
+		<p>
+			Final Amount in <strong class="duration-val">10</strong> years: <strong class="final-val">$1218.99</strong>
+			<div class="final-bar"></div>
+		</p>
 	</section>
 	<script type="text/javascript" src="calculator.js"></script>
 </body>
