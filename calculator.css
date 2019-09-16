@@ -1,9 +1,64 @@
 body {
 	font-family: sans-serif;
+    background-color: #FFC95B
 }
 body * {
 	box-sizing: border-box;
 }
 ul li {
 	margin-bottom: 10px;
+}
+main{
+    margin: 60px, 80px;
+}
+h1, 
+h2,
+strong{
+    font-weight: normal;
+}
+.input-list{ 
+list-style: none;
+padding-left: 0;
+}
+.input-group {
+    margin-bottom: 30px;
+}
+.input-label,
+.input-subtext,
+.calculator-input{
+    display: block;
+}
+.input-label{
+    margin-bottom: 5px;
+}
+.input-subtext{
+    margin-bottom: 15px;
+    color: #995CA5
+}
+
+
+
+.calculator-input{
+    height:45px;
+    width: 300px;
+    padding: 18px 20px;
+    font-size: 20px;
+}
+.starting-bar,
+.contribution-bar,
+.return-bar,
+.final-bar {
+	height: 10px;
+}
+.starting-bar {
+	background-color: blue;
+}
+.contribution-bar {
+	background-color: gold;
+}
+.return-bar {
+	background-color: yellowgreen;
+}
+.final-bar {
+	background-color: green;
 }
